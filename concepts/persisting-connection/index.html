@@ -266,6 +266,19 @@
   
     <li class="md-tabs__item">
       
+        <a href="../../examples/" class="md-tabs__link">
+          Examples
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
         <a href="../../about/why-cli/" class="md-tabs__link">
           About
         </a>
@@ -2113,6 +2126,18 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cmd/spo/feature/feature-enable/" title="feature enable" class="md-nav__link">
+      feature enable
+    </a>
+  </li>
+
         
           
           
@@ -5006,6 +5031,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../cmd/teams/message/message-reply-list/" title="message reply list" class="md-nav__link">
+      message reply list
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -5446,11 +5483,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-15" type="checkbox" id="nav-3-15">
     
     <label class="md-nav__link" for="nav-3-15">
-      PowerApps (pa)
+      Yammer (yammer)
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-15">
-        PowerApps (pa)
+        Yammer (yammer)
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -5465,11 +5502,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-15-1" type="checkbox" id="nav-3-15-1">
     
     <label class="md-nav__link" for="nav-3-15-1">
-      pcf
+      network
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-3-15-1">
-        pcf
+        network
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -5480,44 +5517,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cmd/pa/pcf/pcf-init/" title="pcf init" class="md-nav__link">
-      pcf init
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-15-2" type="checkbox" id="nav-3-15-2">
-    
-    <label class="md-nav__link" for="nav-3-15-2">
-      solution
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-3-15-2">
-        solution
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../cmd/pa/solution/solution-init/" title="solution init" class="md-nav__link">
-      solution init
+    <a href="../../cmd/yammer/network/network-list/" title="network list" class="md-nav__link">
+      network list
     </a>
   </li>
 
@@ -5720,10 +5721,82 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
-      About
+      Examples
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
+        Examples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../examples/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Microsoft Teams
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        Microsoft Teams
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../examples/teams/deploy-teams-app/" title="Deploy Microsoft Teams app from Azure DevOps" class="md-nav__link">
+      Deploy Microsoft Teams app from Azure DevOps
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
         About
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -5912,7 +5985,6 @@
 <span class="k">done</span>
 </pre></div>
 
-
 <p>First, you use the Office 365 CLI to get the list of all apps from the tenant app catalog using the <code>spo app list</code> command. You set the output type to JSON and store it in a shell variable <code>apps</code>. Next, you parse the JSON string using <a href="https://stedolan.github.io/jq/">jq</a> and get IDs of apps that are not deployed. Finally, for each ID you run the <code>spo app deploy</code> Office 365 CLI command passing the ID as a command argument. Notice, that in the script, both <code>spo</code> commands are run as separate commands directly in the shell. In both cases, the shell starts the CLI, executes the specified command and closes the CLI removing all of its resources from memory. Scripts, like the one mentioned above can work, because the Office 365 CLI persists its connection information.</p>
 <h2 id="persisting-connection-information-in-office-365-cli">Persisting connection information in Office 365 CLI<a class="headerlink" href="#persisting-connection-information-in-office-365-cli" title="Permanent link">&para;</a></h2>
 <p>When you log in to Office 365 in the Office 365 CLI, the CLI will persist the information about the connection for future reuse. For the established connection, the Office 365 CLI persists the refresh token as well as all access tokens obtained when using the different CLI commands.</p>
@@ -5948,7 +6020,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../cmd/pa/solution/solution-init/" title="solution init" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../cmd/yammer/network/network-list/" title="network list" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -5957,7 +6029,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                solution init
+                network list
               </span>
             </div>
           </a>
