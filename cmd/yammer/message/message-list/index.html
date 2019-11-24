@@ -6209,6 +6209,18 @@
 <td>Will only return the thread starter (first message) for each thread. This parameter is intended for apps which need to display message threads collapsed</td>
 </tr>
 <tr>
+<td><code>-f, --feedType [feedType]</code></td>
+<td>Returns messages from a specific feed. Available options: <code>All|Top|My|Following|Sent|Private|Received</code>. Default <code>All</code></td>
+</tr>
+<tr>
+<td><code>--groupId [groupId]</code></td>
+<td>Returns the messages from a specific group</td>
+</tr>
+<tr>
+<td><code>--threadId [threadId]</code></td>
+<td>Returns the messages from a specific thread</td>
+</tr>
+<tr>
 <td><code>--limit [limit]</code></td>
 <td>Limits the messages returned</td>
 </tr>
@@ -6231,6 +6243,16 @@
 <p class="admonition-title">Attention</p>
 <p>In order to use this command, you need to grant the Azure AD application used by the Office 365 CLI the permission to the Yammer API. To do this, execute the <code>consent --service yammer</code> command.</p>
 </div>
+<p>Feed types</p>
+<ul>
+<li>All: Corresponds to “All” conversations in the Yammer web interface</li>
+<li>Top: The algorithmic feed for the user that corresponds to "Top" conversations. The Top conversations feed is the feed currently shown in the Yammer mobile apps</li>
+<li>My: The user’s feed, based on the selection they have made between "Following" and "Top" conversations</li>
+<li>Following: The "Following" feed which is conversations involving people and topics that the user is following</li>
+<li>Sent: All messages sent by the user</li>
+<li>Private: Private messages received by the user</li>
+<li>Received: All messages received by the user</li>
+</ul>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Returns all Yammer network messages</p>
 <div class="codehilite"><pre><span></span>yammer message list
@@ -6246,6 +6268,18 @@
 
 <p>Returns the first 10 Yammer network messages</p>
 <div class="codehilite"><pre><span></span>yammer message list --limit <span class="m">10</span>
+</pre></div>
+
+<p>Returns the first 10 Yammer network messages from the Yammer group 312891231</p>
+<div class="codehilite"><pre><span></span>yammer message list --groupId <span class="m">312891231</span>  --limit <span class="m">10</span>
+</pre></div>
+
+<p>Returns the first 10 Yammer network messages from thread 5611239081</p>
+<div class="codehilite"><pre><span></span>yammer message list --threadId <span class="m">5611239081</span>  --limit <span class="m">10</span>
+</pre></div>
+
+<p>Returns the first 20 Yammer message from the sent feed of the user</p>
+<div class="codehilite"><pre><span></span>yammer message list --feedType Sent  --limit <span class="m">20</span>
 </pre></div>
                 
                   
