@@ -1366,10 +1366,82 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-9-1" type="checkbox" id="nav-3-9-1">
+    
+    <label class="md-nav__link" for="nav-3-9-1">
+      mail
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-9-1">
+        mail
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="../../../outlook/mail/mail-send/" title="outlook mail send" class="md-nav__link">
-      outlook mail send
+    <a href="../../../outlook/mail/mail-send/" title="mail send" class="md-nav__link">
+      mail send
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-9-2" type="checkbox" id="nav-3-9-2">
+    
+    <label class="md-nav__link" for="nav-3-9-2">
+      report
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-9-2">
+        report
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../outlook/report/report-mailboxusagequotastatusmailboxcounts/" title="report mailboxusagequotastatusmailboxcounts" class="md-nav__link">
+      report mailboxusagequotastatusmailboxcounts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../outlook/report/report-mailboxusagestorage/" title="report mailboxusagestorage" class="md-nav__link">
+      report mailboxusagestorage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -4767,8 +4839,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#examples" title="Examples" class="md-nav__link">
     Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-information" title="More information" class="md-nav__link">
+    More information
   </a>
   
 </li>
@@ -6142,8 +6228,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#remarks" title="Remarks" class="md-nav__link">
+    Remarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#examples" title="Examples" class="md-nav__link">
     Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-information" title="More information" class="md-nav__link">
+    More information
   </a>
   
 </li>
@@ -6240,6 +6340,8 @@
 </tr>
 </tbody>
 </table>
+<h2 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permanent link">&para;</a></h2>
+<p>Next to updating web properties corresponding to the options of this command, you can update the value of any other web property using its CSOM name, eg. <code>--AllowAutomaticASPXPageIndexing</code>. At this moment, the CLI supports properties of types <code>Boolean</code>, <code>String</code> and <code>Int32</code>.</p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Update subsite title</p>
 <div class="codehilite"><pre><span></span>spo web <span class="nb">set</span> --webUrl https://contoso.sharepoint.com/sites/team-a --title Team-a
@@ -6268,6 +6370,11 @@
 <p>Set search scope to tenant scope</p>
 <div class="codehilite"><pre><span></span>spo web <span class="nb">set</span> --webUrl https://contoso.sharepoint.com/sites/team-a --searchScope tenant
 </pre></div>
+
+<h2 id="more-information">More information<a class="headerlink" href="#more-information" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Web properties: <a href="https://docs.microsoft.com/en-us/previous-versions/office/sharepoint-server/ee545886(v=office.15)">https://docs.microsoft.com/en-us/previous-versions/office/sharepoint-server/ee545886(v=office.15)</a></li>
+</ul>
                 
                   
                 
