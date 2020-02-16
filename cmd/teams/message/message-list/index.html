@@ -7001,12 +7001,20 @@
 <td>The ID of the channel for which to list messages</td>
 </tr>
 <tr>
+<td><code>-s, --since [since]</code></td>
+<td>Date (ISO standard, dash separator) to get delta of messages from (in last 8 months)</td>
+</tr>
+<tr>
 <td><code>--query [query]</code></td>
 <td>JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples</td>
 </tr>
 <tr>
 <td><code>-o, --output [output]</code></td>
 <td>Output type. <code>json|text</code>. Default <code>text</code></td>
+</tr>
+<tr>
+<td><code>--pretty</code></td>
+<td>Prettifies <code>json</code> output</td>
 </tr>
 <tr>
 <td><code>--verbose</code></td>
@@ -7025,8 +7033,12 @@
 </div>
 <p>You can only retrieve a message from a Microsoft Teams team if you are a member of that team.</p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p>Retrieve the specified message from a channel of the Microsoft Teams team</p>
+<p>List the messages from a channel of the Microsoft Teams team</p>
 <div class="codehilite"><pre><span></span>teams message list --teamId fce9e580-8bba-4638-ab5c-ab40016651e3 --channelId <span class="m">19</span>:eb30973b42a847a2a1df92d91e37c76a@thread.skype
+</pre></div>
+
+<p>List the messages from a channel of the Microsoft Teams team that have been created or modified since the date specified by the <code>--since</code> parameter (WARNING: only captures the last 8 months of data)</p>
+<div class="codehilite"><pre><span></span>teams message list --teamId fce9e580-8bba-4638-ab5c-ab40016651e3 --channelId <span class="m">19</span>:eb30973b42a847a2a1df92d91e37c76a@thread.skype --since <span class="m">2019</span>-12-31T14:00:00Z
 </pre></div>
                 
                   
