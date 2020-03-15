@@ -6418,6 +6418,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tenant/report/report-activeuserdetail/" title="report activeuserdetail" class="md-nav__link">
+      report activeuserdetail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tenant/report/report-servicesusercounts/" title="report servicesusercounts" class="md-nav__link">
+      report servicesusercounts
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -6834,10 +6858,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      Microsoft Graph
+      Azure Active Directory
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
+        Azure Active Directory
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../examples/aad/delete-o365-groups/" title="Delete all Office 365 groups" class="md-nav__link">
+      Delete all Office 365 groups
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Microsoft Graph
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
         Microsoft Graph
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -6867,13 +6927,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
     
-    <label class="md-nav__link" for="nav-5-3">
+    <label class="md-nav__link" for="nav-5-4">
       SharePoint Online
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
+      <label class="md-nav__title" for="nav-5-4">
         SharePoint Online
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -6921,6 +6981,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../../examples/spo/remove-site-scripts/" title="Delete custom SharePoint site scripts" class="md-nav__link">
+      Delete custom SharePoint site scripts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../../examples/spo/list-site-app-catalogs/" title="Lists active SharePoint site collection application catalogs" class="md-nav__link">
       Lists active SharePoint site collection application catalogs
     </a>
@@ -6939,13 +7011,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
     
-    <label class="md-nav__link" for="nav-5-4">
+    <label class="md-nav__link" for="nav-5-5">
       Microsoft Teams
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
+      <label class="md-nav__title" for="nav-5-5">
         Microsoft Teams
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -7185,7 +7257,7 @@
 </pre></div>
 
 <p>List all users in the tenant. For each one return the display name and e-mail address</p>
-<div class="codehilite"><pre><span></span>aad user list --properties displayName,mail
+<div class="codehilite"><pre><span></span>aad user list --properties <span class="s2">&quot;displayName,mail&quot;</span>
 </pre></div>
 
 <p>Show users whose display name starts with <em>Patt</em></p>

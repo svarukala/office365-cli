@@ -6411,6 +6411,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tenant/report/report-activeuserdetail/" title="report activeuserdetail" class="md-nav__link">
+      report activeuserdetail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tenant/report/report-servicesusercounts/" title="report servicesusercounts" class="md-nav__link">
+      report servicesusercounts
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -6827,10 +6851,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
     
     <label class="md-nav__link" for="nav-5-2">
-      Microsoft Graph
+      Azure Active Directory
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-2">
+        Azure Active Directory
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../examples/aad/delete-o365-groups/" title="Delete all Office 365 groups" class="md-nav__link">
+      Delete all Office 365 groups
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Microsoft Graph
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
         Microsoft Graph
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -6860,13 +6920,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
     
-    <label class="md-nav__link" for="nav-5-3">
+    <label class="md-nav__link" for="nav-5-4">
       SharePoint Online
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-3">
+      <label class="md-nav__title" for="nav-5-4">
         SharePoint Online
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -6914,6 +6974,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../../examples/spo/remove-site-scripts/" title="Delete custom SharePoint site scripts" class="md-nav__link">
+      Delete custom SharePoint site scripts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../../examples/spo/list-site-app-catalogs/" title="Lists active SharePoint site collection application catalogs" class="md-nav__link">
       Lists active SharePoint site collection application catalogs
     </a>
@@ -6932,13 +7004,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5">
     
-    <label class="md-nav__link" for="nav-5-4">
+    <label class="md-nav__link" for="nav-5-5">
       Microsoft Teams
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-4">
+      <label class="md-nav__title" for="nav-5-5">
         Microsoft Teams
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -7194,15 +7266,15 @@
 <p>All recipients (internal and external) have to have access to the target SharePoint site.</p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Send an e-mail to <em>user@contoso.com</em></p>
-<div class="codehilite"><pre><span></span>spo mail send --webUrl https://contoso.sharepoint.com/sites/project-x --to <span class="s1">&#39;user@contoso.com&#39;</span> --subject <span class="s1">&#39;Email sent via Office 365 CLI&#39;</span> --body <span class="s1">&#39;&lt;h1&gt;Office 365 CLI&lt;/h1&gt;Email sent via &lt;b&gt;command&lt;/b&gt;.&#39;</span>
+<div class="codehilite"><pre><span></span>spo mail send --webUrl https://contoso.sharepoint.com/sites/project-x --to <span class="s2">&quot;user@contoso.com&quot;</span> --subject <span class="s2">&quot;Email sent via Office 365 CLI&quot;</span> --body <span class="s2">&quot;&lt;h1&gt;Office 365 CLI&lt;/h1&gt;Email sent via &lt;b&gt;command&lt;/b&gt;.&quot;</span>
 </pre></div>
 
 <p>Send an e-mail to multiples addresses</p>
-<div class="codehilite"><pre><span></span>spo mail send --webUrl https://contoso.sharepoint.com/sites/project-x --to <span class="s1">&#39;user1@contoso.com,user2@contoso.com&#39;</span> --subject <span class="s1">&#39;Email sent via Office 365 CLI&#39;</span> --body <span class="s1">&#39;&lt;h1&gt;Office 365 CLI&lt;/h1&gt;Email sent via &lt;b&gt;command&lt;/b&gt;.&#39;</span> --cc <span class="s1">&#39;user3@contoso.com&#39;</span> --bcc <span class="s1">&#39;user4@contoso.com&#39;</span>
+<div class="codehilite"><pre><span></span>spo mail send --webUrl https://contoso.sharepoint.com/sites/project-x --to <span class="s2">&quot;user1@contoso.com,user2@contoso.com&quot;</span> --subject <span class="s2">&quot;Email sent via Office 365 CLI&quot;</span> --body <span class="s2">&quot;&lt;h1&gt;Office 365 CLI&lt;/h1&gt;Email sent via &lt;b&gt;command&lt;/b&gt;.&quot;</span> --cc <span class="s2">&quot;user3@contoso.com&quot;</span> --bcc <span class="s2">&quot;user4@contoso.com&quot;</span>
 </pre></div>
 
 <p>Send an e-mail to <em>user@contoso.com</em> with additional headers</p>
-<div class="codehilite"><pre><span></span>spo mail send --webUrl https://contoso.sharepoint.com/sites/project-x --to <span class="s1">&#39;user@contoso.com&#39;</span> --subject <span class="s1">&#39;Email sent via Office 365 CLI&#39;</span> --body <span class="s1">&#39;&lt;h1&gt;Office 365 CLI&lt;/h1&gt;Email sent via &lt;b&gt;command&lt;/b&gt;.&#39;</span> --additionalHeaders <span class="s2">&quot;&#39;{\&quot;X-MC-Tags\&quot;:\&quot;Office 365 CLI\&quot;}&#39;&quot;</span>
+<div class="codehilite"><pre><span></span>spo mail send --webUrl https://contoso.sharepoint.com/sites/project-x --to <span class="s2">&quot;user@contoso.com&quot;</span> --subject <span class="s2">&quot;Email sent via Office 365 CLI&quot;</span> --body <span class="s2">&quot;&lt;h1&gt;Office 365 CLI&lt;/h1&gt;Email sent via &lt;b&gt;command&lt;/b&gt;.&quot;</span> --additionalHeaders <span class="s2">&quot;&#39;{\&quot;X-MC-Tags\&quot;:\&quot;Office 365 CLI\&quot;}&#39;&quot;</span>
 </pre></div>
                 
                   
