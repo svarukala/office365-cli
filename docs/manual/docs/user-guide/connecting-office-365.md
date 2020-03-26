@@ -85,7 +85,7 @@ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.k
 Create a new Personal Information Exchange (.pfx) file
 
 ```
-openssl pkcs12 -export -out protected.pfx -inkey privateKey.key -in certificate.cer -password pass:"pass@word1"
+openssl pkcs12 -export -out protected.pfx -inkey privateKey.key -in certificate.cer -password pass:pass@word1
 ```
 
 At this point the `protected.pfx` file can be used to log in the Office 365 CLI following the instructions above for logging in using a .pfx file.
