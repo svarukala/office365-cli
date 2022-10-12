@@ -124,7 +124,7 @@
     "update-notifier": "^4.0.0",
     "uuid": "^3.4.0",
     "vorpal": "https://github.com/pnp/vorpal/raw/master/vorpal-1.11.8.tgz",
-    "xmldom": "^0.2.1"
+    "xmldom": "^0.6.0"
   },
   "devDependencies": {
     "@types/easy-table": "0.0.32",
